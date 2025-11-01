@@ -1,0 +1,30 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>NPTEL QUIZ</h1>
+      <div id="quiz">
+        <div id="question-number"></div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div class="nav-buttons">
+          <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+          <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+      </div>
+      <div id="result" class="hidden">
+        <h2>Quiz Complete!</h2>
+        <p id="score"></p>
+        <div id="review"></div>
+        <button onclick="restartQuiz()">Restart</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
